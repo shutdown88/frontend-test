@@ -3,13 +3,47 @@ import './App.css';
 import Article from './Article/Article'
 import Post from './Post/Post'
 import articles from './articles.json'
+import Waypoint from 'react-waypoint';
 
-// TODO make this a functional component?
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { navContainerFixed: true };
+  }
+
+  _handleWaypointEnter({ previousPosition, currentPosition, event }) {
+    console.log('Enter', previousPosition, currentPosition)
+    this.setState({ navContainerFixed: true })
+  }
+
+  _handleWaypointLeave({ previousPosition, currentPosition, event }) {
+    console.log('Leave', previousPosition, currentPosition)
+    this.setState({ navContainerFixed: false })
+  }
+
+  getNavContainerStyle() {
+    if (this.state.navContainerFixed) {
+      return {
+        position: 'fixed'
+      }
+    } else {
+      return {
+        position: 'absolute',
+        top: document.documentElement.scrollTop
+      }
+    }
+  }
+
   render() {
     return (
       <div className="App">
-        <div className="nav-container">
+        <Waypoint 
+          topOffset={-350}
+          onEnter={this._handleWaypointEnter.bind(this)}
+          onLeave={this._handleWaypointLeave.bind(this)}
+        />
+        <div className="nav-container" style={this.getNavContainerStyle()}>
           <div className="nav">
             <div className="App-name">Asdrubale</div>
             <div className="App-title">Lorem ipsum dolor</div>
