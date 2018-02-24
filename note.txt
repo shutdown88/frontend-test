@@ -1,0 +1,26 @@
+https://codepen.io/JTParrett/pen/BkDie
+
+USE THIS FOR PARALLAX?
+https://github.com/jscottsmith/react-scroll-parallax
+
+OTHERS: http://voidcanvas.com/top-10-react-parallax-plugins-with-demo/
+
+https://github.com/matteogatti/react-symfony
+
+TODO:
+
+BUTTON PER DIALOG OK
+AVATAR OK da allineare
+GALLERY OK provare a mettere immagini corrette
+NAVBAR OK da vedere fixed 
+DIALOG
+FONT MONSERRAT DA GOOGLE SEMBRA DAPPERTUTTO 
+    https://fonts.google.com/specimen/Montserrat
+TEXT OVERFLOW -> react ellipsis?
+PARALLAX
+PRETTIER
+REVIEW DIMENSIONI
+    Il contenuto del post principale non può rimanere fisso, deve crescere se allargo la pagina
+    però dovrei anche cercare di avere più o meno la stessa dimensione dello sketch a 1280px
+PROVARE AD ESTRARRE IMMAGINI DA SKETCH
+FAVICON, PAGE TITLE

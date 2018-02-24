@@ -1,0 +1,103 @@
+.Post {
+    /* TODO percentuale in modo che risulti 566? */
+    width: 566px;
+    /* flex-basis: 566px; */
+}
+
+
+.Post-heading {
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+.Post-subheading {
+    font-size: 36px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 44px;
+    margin-bottom: 24px;
+}
+
+.Post-content {
+    font-size: 16px;
+    color: #4A4A4A;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.Post-footer-line {
+    border: solid 1px #dde4e4;
+    margin-bottom: 19px;
+}
+
+.Post-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 71px;
+}
+
+/* .Post-footer .user-data {
+} */
+
+.Post-footer .user-avatar {
+    border-radius: 50%;
+    height: 26px;
+    vertical-align: middle;
+    width: 26px;
+}
+
+.Post-footer .username {
+    margin-left: 10px;
+    height: 16px;
+    /* font-family: OpenSans; */
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #9b9b9b;
+}
+
+/* .Post-footer .post-icons {
+} */
+
+.Post-footer .post-icons .article-icon {
+    margin-left: 20px;
+}
+
+.Gallery {
+    display: flex;
+    height: 179px;
+}
+
+.Gallery-big {
+    border-radius: 8px;
+    height: 179px;
+    width: 177px;
+}
+
+.Gallery-small {
+    border-radius: 4px;
+    height: 80px;
+    width: 80px;
+}
+
+.Gallery-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.Gallery-column.Gallery-column-last {
+    padding-right: 0;
+}

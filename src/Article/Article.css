@@ -1,0 +1,84 @@
+/* TODO alcune cose sono da spostare da qui e mettere in App.css */
+.content-container {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: -188px 64px 0 64px;
+    display: flex;
+}
+
+.content {
+    padding: 42px 81px 50px 98px;
+}
+
+.boxes-container {
+    margin-top: -100px;
+    padding-right: 80px;
+}
+
+.Article-box {
+    background: #F8E627;
+    border-radius: 12px;
+    padding: 60px 28px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 414px;
+    width: 310px;
+}
+
+.Article-box .article-index {
+    font-family: Montserrat;
+    font-size: 216px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ecda1f;
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    z-index: 1;
+    height: 259px;
+    width: 241px;
+}
+
+.Article-box .article-preview {
+    position: relative;
+    z-index: 2;
+}
+
+.Article-box .article-icons {
+    height: 16px;
+    margin-bottom: 20px;
+}
+
+.Article-box .heading {
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-bottom: 22px;
+}
+
+.Article-box .subheading {
+    font-size: 26px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 32px;
+    height: 128px;
+    width: 254px;
+    /* TODO ellipsis? */
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.Article-box .article-button {
+    border: solid 1px #3a405b;
+    border-radius: 8px;
+    height: 51px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 51px;
+}
