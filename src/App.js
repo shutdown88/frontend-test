@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Article from './Article/Article'
+import Article from './Article/ArticleModal'
 import Post from './Post/Post'
 import articles from './articles.json'
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
@@ -11,6 +11,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = { navContainerFixed: true, imageHidden: false };
+
+    this._handleWaypointEnter = this._handleWaypointEnter.bind(this)
+    this._handleWaypointLeave = this._handleWaypointLeave.bind(this)
+    this._handleContentWaypointEnter = this._handleContentWaypointEnter.bind(this)
+    this._handleContentWaypointLeave = this._handleContentWaypointLeave.bind(this)
   }
 
   _handleWaypointEnter() {
@@ -23,12 +28,10 @@ class App extends Component {
 
   // TODO forse devo considerare anche il caso in cui leave perchè schermo piccolo e ho scrollato in alto?
   _handleContentWaypointEnter() {
-    console.log('ContentWaypointEnter')
     this.setState({ imageHidden: false })
   }
 
   _handleContentWaypointLeave() {
-    console.log('ContentWaypointLeave')
     this.setState({ imageHidden: true })
   }
 
@@ -45,8 +48,6 @@ class App extends Component {
     }
   }
 
-  // margin: -188px 64px 0 64px;
-  // border-radius: 12px;
   getContentContainerStyle() {
     if (this.state.imageHidden) {
       return {
@@ -69,8 +70,8 @@ class App extends Component {
       <div className="App">
         <Waypoint 
           topOffset={-275}
-          onEnter={this._handleWaypointEnter.bind(this)}
-          onLeave={this._handleWaypointLeave.bind(this)}
+          onEnter={this._handleWaypointEnter}
+          onLeave={this._handleWaypointLeave}
         />
         <div className="nav-container" style={this.getNavContainerStyle()}>
           <div className="nav">
@@ -84,8 +85,8 @@ class App extends Component {
         </div>
           <Waypoint 
             topOffset={268}
-            onEnter={this._handleContentWaypointEnter.bind(this)}
-            onLeave={this._handleContentWaypointLeave.bind(this)}
+            onEnter={this._handleContentWaypointEnter}
+            onLeave={this._handleContentWaypointLeave}
           />
           <Parallax
               offsetYMax={0}

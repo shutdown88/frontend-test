@@ -5,6 +5,7 @@
     background-color: #FFFFFF;
     border-radius: 12px;
     margin: -188px 64px 0 64px;
+    /* TODO controllare se invece di animare margin, riesco ad animare transform */
     transition: margin 500ms;
 }
 
@@ -17,7 +18,6 @@
 }
 
 .boxes-container {
-    /* margin-top: -100px; */
     padding-right: 80px;
 }
 
@@ -87,4 +87,57 @@
     text-align: center;
     vertical-align: middle;
     line-height: 51px;
+}
+
+.Article-modal-title {
+    /* font-family: Montserrat; */
+    font-size: 26px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.Article-modal-gallery-container {
+    height: 328px;
+    background-color: #ffffff;
+    padding-top: 75px;
+}
+
+.Article-modal-gallery {
+    margin-left: 97px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Article-modal-gallery img {
+    margin-right: 18px;
+}
+
+/* .ReactModal__Overlay {
+    background-color: #4a4a4a;
+} */
+
+.ArticleModal {
+    position: absolute;
+    top: 112px;
+    left: 162px;
+    right: 161px;
+    bottom: 130px;
+    border-radius: 12px;
+    border: none;
+    background-color: #f8e627;
+    padding-left: 0;
+    padding-right: 0;
+    outline: none;
+    overflow: hidden;
+}
+
+.ArticleModal--after-open {
+    transition: top 0.4s, left 0.4s, bottom 0.4s;
 }
