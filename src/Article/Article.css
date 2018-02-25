@@ -1,8 +1,14 @@
 /* TODO alcune cose sono da spostare da qui e mettere in App.css */
 .content-container {
+    display: flex;
+    justify-content: center;
     background-color: #FFFFFF;
     border-radius: 12px;
     margin: -188px 64px 0 64px;
+    transition: margin 500ms;
+}
+
+.content-root {
     display: flex;
 }
 
@@ -11,7 +17,7 @@
 }
 
 .boxes-container {
-    margin-top: -100px;
+    /* margin-top: -100px; */
     padding-right: 80px;
 }
 

@@ -24,3 +24,6 @@ REVIEW DIMENSIONI
     però dovrei anche cercare di avere più o meno la stessa dimensione dello sketch a 1280px
 PROVARE AD ESTRARRE IMMAGINI DA SKETCH
 FAVICON, PAGE TITLE
+
+
+boxes, rispetto a contenuto, passano da +70 a -112
