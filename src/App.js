@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Article from './Article/Article'
 import Post from './Post/Post'
-import articlesJson from './articles.json'
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import Waypoint from 'react-waypoint';
 
@@ -72,7 +71,7 @@ class App extends Component {
   }
 
   render() {
-    const articles = this.props.articles || articlesJson;
+    const articles = this.props.articles || [];
     return (
       <ParallaxProvider>
       <div className="App">
