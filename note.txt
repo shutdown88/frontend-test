@@ -19,7 +19,7 @@ DIALOG
 FONT MONSERRAT DA GOOGLE SEMBRA DAPPERTUTTO 
     https://fonts.google.com/specimen/Montserrat
 TEXT OVERFLOW -> react ellipsis?
-PARALLAX
+PARALLAX OK da rivedere la posizione dei box
 PRETTIER
 REVIEW DIMENSIONI
     Il contenuto del post principale non può rimanere fisso, deve crescere se allargo la pagina
@@ -27,5 +27,18 @@ REVIEW DIMENSIONI
 PROVARE AD ESTRARRE IMMAGINI DA SKETCH
 FAVICON, PAGE TITLE
 
+BUGS
+Aggiustare dimensioni dialog
+Tenere conto di above o below in waypoints
 
 boxes, rispetto a contenuto, passano da +70 a -112
+
+BACKEND
+http://mherman.org/blog/2017/12/07/dockerizing-a-react-app/#.WpP_3BPwZ-U
+https://github.com/facebook/create-react-app/issues/1354
+https://stackoverflow.com/questions/32820601/passing-json-data-from-php-to-html-data-attribute-and-then-to-javascript
+
+docker build -t php-app .
+docker run -d -p 8080:80  --name running-php-app php-app
+
+docker run -d -p 8080:80 --name my-apache-php-app -v "$PWD"/src:/var/www/html php:7.0-apache
