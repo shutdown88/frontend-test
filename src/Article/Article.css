@@ -109,12 +109,23 @@
     text-transform: uppercase;
 }
 
+.Article-modal-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    padding-left: 97px;
+    padding-top: 25px;
+    padding-right: 40%;
+
+}
+
 .Article-modal-title {
-    /* font-family: Montserrat; */
-    animation-name: fadeInUp;
+    /* animation-name: fadeInUp;
     animation-delay: 400ms;
     animation-fill-mode: both;
-    animation-duration: 600ms;
+    animation-duration: 600ms; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     font-weight: bold;
     font-style: normal;
@@ -123,12 +134,10 @@
     letter-spacing: normal;
     text-align: left;
     color: #000000;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 
 .Article-modal-gallery-container {
-    height: 328px;
+    height: 50%;
     background-color: #ffffff;
     padding-top: 75px;
 }
@@ -155,10 +164,6 @@
 
 .ArticleModal {
     position: absolute;
-    top: 112px;
-    left: 162px;
-    right: 161px;
-    bottom: 130px;
     border-radius: 12px;
     border: none;
     background-color: #f8e627;
@@ -180,7 +185,7 @@
     animation-name: fadeInUp;
     animation-fill-mode: both;
     animation-duration: 800ms;
-    animation-delay: 300ms;
+    animation-delay: 200ms;
 }
 
 @keyframes fadeInUp {

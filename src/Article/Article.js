@@ -14,17 +14,10 @@ const modalCustomStyles = {
     },
     content: {
         position: 'absolute',
-        top: '112px',
-        left: '162px',
-        right: '161px',
-        bottom: '130px',
-        borderRadius: '12px',
-        border: 'none',
-        backgroundColor: '#f8e627',
-        paddingLeft: 0,
-        paddingRight: 0,
-        outline: 'none',
-        overflow: 'hidden'
+        top: '9vh',
+        bottom: '10vh',
+        left: '12vw',
+        right: '12vw',
       }
 }
 
@@ -122,9 +115,11 @@ export default class ArticleModal extends Component {
                     isOpen={this.state.modalIsOpen}
                     onRequestClose={this.closeModal}
                     style={this.getModalStyle()}
-                >
-                    <h2 className="Article-modal-title">{article.subheading}</h2>
-                    <div className="Article-modal-gallery-container myFadeInUp">{renderGallery()}</div>
+                >   
+                    <div className="Article-modal-title-container fadeInUp">
+                        <span className="Article-modal-title">{article.subheading}</span>
+                    </div>
+                    <div className="Article-modal-gallery-container fadeInUp">{renderGallery()}</div>
                 </Modal>
             </div>
         )
