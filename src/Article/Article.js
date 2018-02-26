@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
+import Truncate from 'react-truncate';
 import './Article.css'
 // TODO make a map for svg icons? even if there is only one?
 import iconMap from './icons-map'
@@ -100,7 +101,11 @@ export default class ArticleModal extends Component {
                         }
                     </div>
                     <div className="heading">{article.heading}</div>
-                    <div className="subheading">{article.subheading}</div>
+                    <div className="subheading">
+                        <Truncate lines={4} ellipsis={'...'}>
+                            {article.subheading}
+                        </Truncate>
+                    </div>
                     {article.index === 0 && <div onClick={this.openModal} className="article-button">
                         <span className="article-button-text">Clicca qui</span>
                     </div>}
@@ -117,7 +122,9 @@ export default class ArticleModal extends Component {
                     style={this.getModalStyle()}
                 >   
                     <div className="Article-modal-title-container fadeInUp">
-                        <span className="Article-modal-title">{article.subheading}</span>
+                        <span className="Article-modal-title">
+                            {article.subheading}
+                        </span>
                     </div>
                     <div className="Article-modal-gallery-container fadeInUp">{renderGallery()}</div>
                 </Modal>

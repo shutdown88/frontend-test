@@ -13,12 +13,12 @@ BUTTON PER DIALOG OK
 AVATAR OK da allineare
 GALLERY OK provare a mettere immagini corrette
 NAVBAR OK da vedere fixed 
-DIALOG
+DIALOG OK
     ANIMATIONS
     TITLE PADDING, ELLIPSIS? FIXED SIZES
-FONT MONSERRAT DA GOOGLE SEMBRA DAPPERTUTTO 
+FONT MONSERRAT DA GOOGLE SEMBRA DAPPERTUTTO  OK
     https://fonts.google.com/specimen/Montserrat
-TEXT OVERFLOW -> react ellipsis?
+TEXT OVERFLOW -> react ellipsis? OK
 PARALLAX OK da rivedere la posizione dei box
 PRETTIER
 REVIEW DIMENSIONI
@@ -32,6 +32,11 @@ Aggiustare dimensioni dialog
 Tenere conto di above o below in waypoints
 
 boxes, rispetto a contenuto, passano da +70 a -112
+
+animazione dialog, con box che fade
+aggiustare waypoints
+immagini gallery post
+aggiustare parallax, se si riesce
 
 BACKEND
 http://mherman.org/blog/2017/12/07/dockerizing-a-react-app/#.WpP_3BPwZ-U
