@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import Modal from 'react-modal';
 import Truncate from 'react-truncate';
 import './Article.css'
-// TODO make a map for svg icons? even if there is only one?
-import iconMap from './icons-map'
+import iconMap from '../icons'
 import galleryImage from './article-modal-image.png'
 
 const formatIndex = index => String(index).padStart(2, '0')
 
-// TODO move in css in .ArticleModal
 const modalCustomStyles = {
     overlay: {
       backgroundColor: '#4a4a4a'
@@ -21,8 +19,6 @@ const modalCustomStyles = {
         right: '12vw',
       }
 }
-
-// const modalPosition = 
 
 const renderGalleryImage = () => (
     <img src={galleryImage} alt="Gallery" />
@@ -56,9 +52,6 @@ export default class ArticleModal extends Component {
 
     afterModalOpen() {
         this.setState({ modalIsOpening: false })
-        // setTimeout(() => {
-        //     this.setState({ transitionModalContent: true })
-        // }, 200);
     }
 
     closeModal() {
@@ -85,7 +78,7 @@ export default class ArticleModal extends Component {
     }
 
     render() {
-        const { article } = this.props
+        const { article } = this.props;
         return (
             <div className="Article-box" ref={articleBox => this.articleBox = articleBox}>
                 <div className="article-index">

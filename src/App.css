@@ -1,9 +1,9 @@
-.App {
-  font-family: 'Montserrat', sans-serif;
-}
-
 * {
   box-sizing: border-box;
+}
+
+.App {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nav-container {
@@ -63,4 +63,25 @@
   background-size: cover;
   height: 50vw;
   color: white;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  margin: -188px 64px 0 64px;
+  transition: margin 500ms;
+}
+
+.content-root {
+  display: flex;
+}
+
+.content {
+  padding: 42px 81px 50px 98px;
+}
+
+.boxes-container {
+  padding-right: 80px;
 }
