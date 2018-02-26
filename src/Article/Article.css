@@ -33,7 +33,6 @@
 }
 
 .Article-box .article-index {
-    font-family: Montserrat;
     font-size: 216px;
     font-weight: bold;
     font-style: normal;
@@ -43,7 +42,7 @@
     text-align: left;
     color: #ecda1f;
     position: absolute;
-    top: -50px;
+    top: -71px;
     left: -30px;
     z-index: 1;
     height: 259px;
@@ -62,17 +61,25 @@
 
 .Article-box .heading {
     font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
     color: #000000;
-    letter-spacing: 0;
-    line-height: 16px;
     margin-bottom: 22px;
 }
 
 .Article-box .subheading {
     font-size: 26px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
     color: #000000;
-    letter-spacing: 0;
-    line-height: 32px;
     height: 128px;
     width: 254px;
     /* TODO ellipsis? */
@@ -89,8 +96,25 @@
     line-height: 51px;
 }
 
+.Article-box .article-button .article-button-text {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000000;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+
 .Article-modal-title {
     /* font-family: Montserrat; */
+    animation-name: fadeInUp;
+    animation-delay: 400ms;
+    animation-fill-mode: both;
+    animation-duration: 600ms;
     font-size: 26px;
     font-weight: bold;
     font-style: normal;
@@ -120,8 +144,14 @@
 }
 
 /* .ReactModal__Overlay {
-    background-color: #4a4a4a;
+    opacity: 0;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+    transition: opacity 400ms;
 } */
+
 
 .ArticleModal {
     position: absolute;
@@ -139,5 +169,28 @@
 }
 
 .ArticleModal--after-open {
-    transition: top 0.4s, left 0.4s, bottom 0.4s;
+    transition: top 0.2s, left 0.2s, bottom 0.2s;
+}
+
+.hidden {
+    display: none
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-fill-mode: both;
+    animation-duration: 800ms;
+    animation-delay: 300ms;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }

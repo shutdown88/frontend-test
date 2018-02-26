@@ -1,3 +1,7 @@
+.App {
+  font-family: 'Montserrat', sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -34,12 +38,16 @@
 }
 
 .nav .App-title {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.29;
   letter-spacing: 1px;
+  text-align: center;
   color: #9b9b9b;
   text-transform: uppercase;
   width: 209px;
@@ -51,8 +59,8 @@
 }
 
 .App-header {
-  background: url(cover.png) no-repeat center center;
+  background: url(cover.png) no-repeat center;
   background-size: cover;
-  height: 640px;
+  height: 50vw;
   color: white;
 }

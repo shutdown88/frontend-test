@@ -7,25 +7,38 @@
 
 .Post-heading {
     font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
     color: #000000;
-    letter-spacing: 0;
-    line-height: 16px;
     margin-bottom: 20px;
 }
 
 .Post-subheading {
     font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
     color: #000000;
-    letter-spacing: 0;
-    line-height: 44px;
     margin-bottom: 24px;
 }
 
 .Post-content {
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    color: #4A4A4A;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
     letter-spacing: 0.5px;
-    line-height: 24px;
+    text-align: left;
+    color: #4a4a4a;
     margin-bottom: 25px;
 }
 
@@ -42,9 +55,6 @@
     margin-bottom: 71px;
 }
 
-/* .Post-footer .user-data {
-} */
-
 .Post-footer .user-avatar {
     border-radius: 50%;
     height: 26px;
@@ -55,7 +65,7 @@
 .Post-footer .username {
     margin-left: 10px;
     height: 16px;
-    /* font-family: OpenSans; */
+    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: normal;
     font-style: normal;
@@ -65,9 +75,6 @@
     text-align: left;
     color: #9b9b9b;
 }
-
-/* .Post-footer .post-icons {
-} */
 
 .Post-footer .post-icons .article-icon {
     margin-left: 20px;

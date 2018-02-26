@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Article from './Article/ArticleModal'
+import Article from './Article/Article'
 import Post from './Post/Post'
 import articles from './articles.json'
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
@@ -76,7 +76,9 @@ class App extends Component {
         <div className="nav-container" style={this.getNavContainerStyle()}>
           <div className="nav">
             <div className="App-name">Asdrubale</div>
-            <div className="App-title">Lorem ipsum dolor</div>
+            <div className="App-title">
+              <span>Lorem</span> <span>ipsum</span> <span>dolor</span>
+            </div>
             <div className="App-right"></div>
           </div>
         </div>

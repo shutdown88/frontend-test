@@ -15,15 +15,20 @@ const icons = ['drop', 'fire', 'paper'];
 // TODO dinamica? calcolando?
 const Gallery = () => (
     <div className="Gallery">
-        <img className="Gallery-big" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" />
+        <img className="Gallery-big" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" alt="Gallery"/>
         <div className="Gallery-column">
-            <img className="Gallery-small" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" />
-            <img className="Gallery-small" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" />
+            <img className="Gallery-small" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" 
+            alt="Gallery" />
+            <img className="Gallery-small" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" 
+            alt="Gallery" />
         </div>
-        <img className="Gallery-big" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" />
+        <img className="Gallery-big" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" 
+        alt="Gallery" />
         <div className="Gallery-column Gallery-column-last">
-            <img className="Gallery-small" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" />
-            <img className="Gallery-small" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" />
+            <img className="Gallery-small" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" 
+             alt="Gallery"/>
+            <img className="Gallery-small" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" 
+            alt="Gallery" />
         </div>
     </div>
 );
@@ -37,12 +42,13 @@ export default ({ post: { description } }) => (
         <hr className="Post-footer-line"/>
         <div className="Post-footer">
             <div className="user-data">
-                <img className = "user-avatar" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" />
+                <img className = "user-avatar" src="https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/people1.jpg" 
+                alt="User avatar" />
                 <span className="username">Lorem Ipsum</span>
             </div>
             <div className="post-icons">
                 {icons && icons.map(
-                        i => iconMap[i] ? <img src={iconMap[i]} className='article-icon' /> 
+                        i => iconMap[i] ? <img src={iconMap[i]} className='article-icon' alt="Icon"/> 
                             : ''
                     )}
             </div>
