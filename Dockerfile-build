@@ -1,0 +1,11 @@
+# build environment
+FROM node:8.9.4 as builder
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
+COPY . /usr/src/app
+RUN npm install
+RUN npm run build
+
+# production environment
+FROM php:7.0-apache
+COPY --from=builder /usr/src/app/build /var/www/html/
