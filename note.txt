@@ -27,16 +27,6 @@ REVIEW DIMENSIONI
 PROVARE AD ESTRARRE IMMAGINI DA SKETCH
 FAVICON, PAGE TITLE
 
-TODO
-Animazioni dialog
-    animazione dialog, con box che fade
-Posizione boxes dovuta a parallax
-In safari non funziona bene l'effetto della barra di navigazione e non si vede l'ultimo box,
-viene traslato fuori dallo schermo sotto
-errori di react sulle keys in development
-
-boxes, rispetto a contenuto, passano da +70 a -112
-
 BACKEND
 http://mherman.org/blog/2017/12/07/dockerizing-a-react-app/#.WpP_3BPwZ-U
 https://github.com/facebook/create-react-app/issues/1354

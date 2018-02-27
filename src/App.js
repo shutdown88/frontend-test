@@ -36,7 +36,8 @@ class App extends Component {
   _handleWaypointLeave({ previousPosition, currentPosition }) {
     this.setState({
       navContainerFixed: false,
-      navContainerTop: document.documentElement.scrollTop
+      navContainerTop:
+        document.documentElement.scrollTop || document.body.scrollTop
     });
   }
 
@@ -118,8 +119,8 @@ class App extends Component {
                 <Post post={postData} />
               </div>
               <Parallax
-                offsetYMax={150}
-                offsetYMin={-40}
+                offsetYMax={'800px'}
+                offsetYMin={'-800px'}
                 slowerScrollRate={true}
               >
                 <div className="boxes-container">
