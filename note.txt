@@ -28,15 +28,12 @@ PROVARE AD ESTRARRE IMMAGINI DA SKETCH
 FAVICON, PAGE TITLE
 
 TODO
-Aggiustare dimensioni dialog
-Aggiustare waypoints
-    Tenere conto di above o below in waypoints
 Animazioni dialog
     animazione dialog, con box che fade
-Layout pagina, posizione relativa post e boxes
 Posizione boxes dovuta a parallax
-Readme
-Immagine di build?
+In safari non funziona bene l'effetto della barra di navigazione e non si vede l'ultimo box,
+viene traslato fuori dallo schermo sotto
+errori di react sulle keys in development
 
 boxes, rispetto a contenuto, passano da +70 a -112
 

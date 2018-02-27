@@ -1,9 +1,3 @@
-.Post {
-  /* TODO percentuale in modo che risulti 566? */
-  width: 566px;
-  /* flex-basis: 566px; */
-}
-
 .Post-heading {
   font-size: 14px;
   font-weight: normal;

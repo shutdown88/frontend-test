@@ -63,23 +63,27 @@
   color: white;
 }
 
-.content-container {
-  display: flex;
-  justify-content: center;
+.content-placeholder {
   background-color: #ffffff;
   border-radius: 12px;
   margin: -188px 64px 0 64px;
   transition: margin 500ms;
+  height: 400px;
 }
 
 .content-root {
   display: flex;
+  justify-content: space-between;
+  margin-top: -400px;
+  margin-right: 64px;
+  margin-left: 64px;
 }
 
 .content {
+  width: 65%;
   padding: 42px 81px 50px 98px;
 }
 
 .boxes-container {
-  padding-right: 80px;
+  padding-right: 100px;
 }

@@ -5,7 +5,6 @@ import Post from './Post/Post';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import Waypoint from 'react-waypoint';
 
-// TODO dove metterlo?
 const postData = {
   heading: "Nun ce sta' mammà là dint'!",
   subheading:
@@ -30,24 +29,27 @@ class App extends Component {
     );
   }
 
-  _handleWaypointEnter() {
+  _handleWaypointEnter({ previousPosition, currentPosition }) {
     this.setState({ navContainerFixed: true });
   }
 
-  _handleWaypointLeave() {
+  _handleWaypointLeave({ previousPosition, currentPosition }) {
     this.setState({
       navContainerFixed: false,
       navContainerTop: document.documentElement.scrollTop
     });
   }
 
-  // TODO forse devo considerare anche il caso in cui leave perchè schermo piccolo e ho scrollato in alto?
-  _handleContentWaypointEnter() {
-    this.setState({ imageHidden: false });
+  _handleContentWaypointEnter({ previousPosition }) {
+    if (previousPosition === Waypoint.above) {
+      this.setState({ imageHidden: false });
+    }
   }
 
-  _handleContentWaypointLeave() {
-    this.setState({ imageHidden: true });
+  _handleContentWaypointLeave({ currentPosition }) {
+    if (currentPosition === Waypoint.above) {
+      this.setState({ imageHidden: true });
+    }
   }
 
   getNavContainerStyle() {
@@ -63,7 +65,7 @@ class App extends Component {
     }
   }
 
-  getContentContainerStyle() {
+  getContentPlaceholderStyle() {
     if (this.state.imageHidden) {
       return {
         borderRadius: '0',
@@ -108,25 +110,24 @@ class App extends Component {
           />
           <Parallax offsetYMax={0} offsetYMin={-20}>
             <div
-              className="content-container"
-              style={this.getContentContainerStyle()}
-            >
-              <div className="content-root">
-                <div className="content">
-                  <Post post={postData} />
-                </div>
-                <Parallax
-                  offsetYMax={150}
-                  offsetYMin={-40}
-                  slowerScrollRate={true}
-                >
-                  <div className="boxes-container">
-                    {articles.map((a, index) => (
-                      <Article article={{ index, ...a }} />
-                    ))}
-                  </div>
-                </Parallax>
+              className="content-placeholder"
+              style={this.getContentPlaceholderStyle()}
+            />
+            <div className="content-root">
+              <div className="content">
+                <Post post={postData} />
               </div>
+              <Parallax
+                offsetYMax={150}
+                offsetYMin={-40}
+                slowerScrollRate={true}
+              >
+                <div className="boxes-container">
+                  {articles.map((a, index) => (
+                    <Article article={{ index, ...a }} />
+                  ))}
+                </div>
+              </Parallax>
             </div>
           </Parallax>
         </div>

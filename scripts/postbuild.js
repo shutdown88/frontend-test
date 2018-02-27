@@ -23,3 +23,4 @@ fs.writeFileSync(
 );
 
 fs.unlinkSync(indexHtmlPath);
+console.log('Created index.php successfully');
