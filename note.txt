@@ -27,16 +27,18 @@ REVIEW DIMENSIONI
 PROVARE AD ESTRARRE IMMAGINI DA SKETCH
 FAVICON, PAGE TITLE
 
-BUGS
+TODO
 Aggiustare dimensioni dialog
-Tenere conto di above o below in waypoints
+Aggiustare waypoints
+    Tenere conto di above o below in waypoints
+Animazioni dialog
+    animazione dialog, con box che fade
+Layout pagina, posizione relativa post e boxes
+Posizione boxes dovuta a parallax
+Readme
+Immagine di build?
 
 boxes, rispetto a contenuto, passano da +70 a -112
-
-animazione dialog, con box che fade
-aggiustare waypoints
-immagini gallery post
-aggiustare parallax, se si riesce
 
 BACKEND
 http://mherman.org/blog/2017/12/07/dockerizing-a-react-app/#.WpP_3BPwZ-U
@@ -44,7 +46,7 @@ https://github.com/facebook/create-react-app/issues/1354
 https://stackoverflow.com/questions/32820601/passing-json-data-from-php-to-html-data-attribute-and-then-to-javascript
 
 docker build -t php-app .
-docker run -d -p 8080:80  --name running-php-app php-app
-
+docker run -d -p 8080:80 --name running-php-app php-app
 docker run -d -p 8080:80 --name my-apache-php-app -v "$PWD"/src:/var/www/html php:7.0-apache
-docker-compose up -d --build
+
+docker-compose up

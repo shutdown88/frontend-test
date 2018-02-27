@@ -1,133 +1,133 @@
 .Article-box {
-    background: #F8E627;
-    border-radius: 12px;
-    padding: 60px 28px;
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
-    height: 414px;
-    width: 310px;
+  background: #f8e627;
+  border-radius: 12px;
+  padding: 60px 28px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 414px;
+  width: 310px;
 }
 
 .Article-box .article-index {
-    font-size: 216px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ecda1f;
-    position: absolute;
-    top: -71px;
-    left: -30px;
-    z-index: 1;
-    height: 259px;
-    width: 241px;
+  font-size: 216px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ecda1f;
+  position: absolute;
+  top: -71px;
+  left: -30px;
+  z-index: 1;
+  height: 259px;
+  width: 241px;
 }
 
 .Article-box .article-preview {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .Article-box .article-icons {
-    height: 16px;
-    margin-bottom: 20px;
+  height: 16px;
+  margin-bottom: 20px;
 }
 
 .Article-box .heading {
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.14;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000000;
-    margin-bottom: 22px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 22px;
 }
 
 .Article-box .subheading {
-    font-size: 26px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.23;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000000;
-    height: 128px;
-    width: 254px;
-    /* TODO ellipsis? */
-    overflow: hidden;
-    margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  height: 128px;
+  width: 254px;
+  /* TODO ellipsis? */
+  overflow: hidden;
+  margin-bottom: 25px;
 }
 
 .Article-box .article-button {
-    border: solid 1px #3a405b;
-    border-radius: 8px;
-    height: 51px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 51px;
+  border: solid 1px #3a405b;
+  border-radius: 8px;
+  height: 51px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 51px;
 }
 
 .Article-box .article-button .article-button-text {
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.14;
-    letter-spacing: 2px;
-    text-align: center;
-    color: #000000;
-    letter-spacing: normal;
-    text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #000000;
+  letter-spacing: normal;
+  text-transform: uppercase;
 }
 
 .Article-modal-title-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-    padding-left: 97px;
-    padding-top: 25px;
-    padding-right: 30%;
-    padding-bottom: 10px;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  padding-left: 97px;
+  padding-top: 25px;
+  padding-right: 30%;
+  padding-bottom: 10px;
+  overflow: hidden;
 }
 
 .Article-modal-title {
-    /* animation-name: fadeInUp;
+  /* animation-name: fadeInUp;
     animation-delay: 400ms;
     animation-fill-mode: both;
     animation-duration: 600ms; */
-    font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.23;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
 }
 
 .Article-modal-gallery-container {
-    height: 50%;
-    background-color: #ffffff;
-    padding-top: 75px;
+  height: 50%;
+  background-color: #ffffff;
+  padding-top: 75px;
 }
 
 .Article-modal-gallery {
-    margin-left: 97px;
-    display: flex;
-    flex-wrap: nowrap;
+  margin-left: 97px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .Article-modal-gallery img {
-    margin-right: 18px;
+  margin-right: 18px;
 }
 
 /* .ReactModal__Overlay {
@@ -139,41 +139,40 @@
     transition: opacity 400ms;
 } */
 
-
 .ArticleModal {
-    position: absolute;
-    border-radius: 12px;
-    border: none;
-    background-color: #f8e627;
-    padding-left: 0;
-    padding-right: 0;
-    outline: none;
-    overflow: hidden;
+  position: absolute;
+  border-radius: 12px;
+  border: none;
+  background-color: #f8e627;
+  padding-left: 0;
+  padding-right: 0;
+  outline: none;
+  overflow: hidden;
 }
 
 .ArticleModal--after-open {
-    transition: top 0.2s, left 0.2s, bottom 0.2s;
+  transition: top 0.2s, left 0.2s, bottom 0.2s;
 }
 
 .hidden {
-    display: none
+  display: none;
 }
 
 .fadeInUp {
-    animation-name: fadeInUp;
-    animation-fill-mode: both;
-    animation-duration: 800ms;
-    animation-delay: 200ms;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  animation-duration: 800ms;
+  animation-delay: 200ms;
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
 
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
