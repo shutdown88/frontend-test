@@ -1,90 +1,90 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .App {
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-container {
-  position: fixed;
-  background-color: #ffffff;
-  height: 60px;
-  width: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    height: 60px;
+    width: 100%;
 }
 
 .nav {
-  position: relative;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav .App-name {
-  position: absolute;
-  font-size: 20px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.9;
-  letter-spacing: normal;
-  color: #000000;
-  padding: 20px 0 22px 64px;
-  top: 0;
-  left: 0;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.9;
+    letter-spacing: normal;
+    color: #000000;
+    padding: 20px 0 22px 64px;
+    top: 0;
+    left: 0;
 }
 
 .nav .App-title {
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.29;
-  letter-spacing: 1px;
-  text-align: center;
-  color: #9b9b9b;
-  text-transform: uppercase;
-  width: 209px;
-  height: 18px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #9b9b9b;
+    text-transform: uppercase;
+    width: 209px;
+    height: 18px;
 }
 
 .App-header-container {
-  padding-top: 60px;
+    padding-top: 60px;
 }
 
 .App-header {
-  background: url(cover.png) no-repeat center;
-  background-size: cover;
-  height: 50vw;
-  color: white;
+    background: url(cover.png) no-repeat center;
+    background-size: cover;
+    height: 50vw;
+    color: white;
 }
 
 .content-placeholder {
-  background-color: #ffffff;
-  border-radius: 12px;
-  margin: -188px 64px 0 64px;
-  transition: margin 500ms;
-  height: 400px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: -188px 64px 0 64px;
+    transition: margin 500ms;
+    height: 400px;
 }
 
 .content-root {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -400px;
-  margin-right: 64px;
-  margin-left: 64px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -400px;
+    margin-right: 64px;
+    margin-left: 64px;
 }
 
 .content {
-  width: 65%;
-  padding: 42px 81px 50px 98px;
+    width: 65%;
+    padding: 42px 81px 50px 98px;
 }
 
 .boxes-container {
-  margin-top: 300px;
-  padding-right: 100px;
+    margin-top: 300px;
+    padding-right: 100px;
 }

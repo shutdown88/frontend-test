@@ -8,10 +8,10 @@ let articlesData = window.SERVER_DATA;
 
 // Static data for development and test
 if (process.env.NODE_ENV !== 'production') {
-  articlesData = articlesDev;
+    articlesData = articlesDev;
 }
 
 ReactDOM.render(
-  <App articles={articlesData} />,
-  document.getElementById('root')
+    <App articles={articlesData} />,
+    document.getElementById('root')
 );

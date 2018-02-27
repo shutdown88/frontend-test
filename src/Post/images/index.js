@@ -7,11 +7,11 @@ import gallery6 from './6.png';
 import avatar from './avatar.png';
 
 export default {
-  gallery1,
-  gallery2,
-  gallery3,
-  gallery4,
-  gallery5,
-  gallery6,
-  avatar
+    gallery1,
+    gallery2,
+    gallery3,
+    gallery4,
+    gallery5,
+    gallery6,
+    avatar
 };
