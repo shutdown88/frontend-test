@@ -124,7 +124,7 @@ class App extends Component {
               >
                 <div className="boxes-container">
                   {articles.map((a, index) => (
-                    <Article article={{ index, ...a }} />
+                    <Article key={a.id} article={{ index, ...a }} />
                   ))}
                 </div>
               </Parallax>

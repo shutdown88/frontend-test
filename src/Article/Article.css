@@ -99,10 +99,6 @@
 }
 
 .Article-modal-title {
-  /* animation-name: fadeInUp;
-    animation-delay: 400ms;
-    animation-fill-mode: both;
-    animation-duration: 600ms; */
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   font-weight: bold;
@@ -112,32 +108,44 @@
   letter-spacing: normal;
   text-align: left;
   color: #000000;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  animation-duration: 400ms;
+  animation-delay: 500ms;
 }
 
 .Article-modal-gallery-container {
   height: 50%;
   background-color: #ffffff;
   padding-top: 75px;
+  animation-name: slideInUp;
+  animation-fill-mode: both;
+  animation-duration: 400ms;
+  animation-delay: 200ms;
 }
 
 .Article-modal-gallery {
   margin-left: 97px;
   display: flex;
   flex-wrap: nowrap;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  animation-duration: 400ms;
+  animation-delay: 400ms;
 }
 
 .Article-modal-gallery img {
   margin-right: 18px;
 }
 
-/* .ReactModal__Overlay {
-    opacity: 0;
+.ReactModal__Overlay {
+  opacity: 0;
 }
 
 .ReactModal__Overlay--after-open {
-    opacity: 1;
-    transition: opacity 400ms;
-} */
+  opacity: 1;
+  transition: opacity 200ms;
+}
 
 .ArticleModal {
   position: absolute;
@@ -151,28 +159,32 @@
 }
 
 .ArticleModal--after-open {
-  transition: top 0.2s, left 0.2s, bottom 0.2s;
+  transition: top 300ms, left 300ms, bottom 300ms;
 }
 
 .hidden {
   display: none;
 }
 
-.fadeInUp {
-  animation-name: fadeInUp;
-  animation-fill-mode: both;
-  animation-duration: 800ms;
-  animation-delay: 200ms;
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 20%, 0);
   }
 
   to {
     opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
     transform: translate3d(0, 0, 0);
   }
 }

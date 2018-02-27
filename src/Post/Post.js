@@ -34,7 +34,12 @@ export default ({ post: { heading, subheading, description, icons } }) => (
           icons.map(
             i =>
               iconMap[i] ? (
-                <img src={iconMap[i]} className="article-icon" alt="Icon" />
+                <img
+                  key={i}
+                  src={iconMap[i]}
+                  className="article-icon"
+                  alt="Icon"
+                />
               ) : (
                 ''
               )

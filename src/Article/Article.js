@@ -32,7 +32,7 @@ const renderGallery = () => (
   </div>
 );
 
-export default class ArticleModal extends Component {
+export default class Article extends Component {
   constructor(props) {
     super(props);
     this.state = { modalIsOpen: false, modalIsOpening: false };
@@ -104,7 +104,12 @@ export default class ArticleModal extends Component {
               article.icons.map(
                 i =>
                   iconMap[i] ? (
-                    <img src={iconMap[i]} className="article-icon" alt={i} />
+                    <img
+                      key={i}
+                      src={iconMap[i]}
+                      className="article-icon"
+                      alt={i}
+                    />
                   ) : (
                     ''
                   )
@@ -133,10 +138,10 @@ export default class ArticleModal extends Component {
           onRequestClose={this.closeModal}
           style={this.getModalStyle()}
         >
-          <div className="Article-modal-title-container fadeInUp">
+          <div className="Article-modal-title-container">
             <span className="Article-modal-title">{article.subheading}</span>
           </div>
-          <div className="Article-modal-gallery-container fadeInUp">
+          <div className="Article-modal-gallery-container">
             {renderGallery()}
           </div>
         </Modal>
